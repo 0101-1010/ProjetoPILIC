@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Escolha sua LP</title>
+  <meta name="description" content="Escolha">
+  <meta name="author" content="Fernando Oliveira">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">	
+    <div class="row">
+  	  <div class="two-thirds column">
+        <h2>Escolha sua linguagem</h2>
+
+        <div id="progress_bar"></div>
+  	  	<form class="questions_box">
+
+  	  		<div id="question-1">
+  	  		  <h2>Questão 1</h2>
+  	  			<h3>Onde pretende trabalhar?</h3>
+  	  			<input id="question-1-answer-a" type="radio" name="favelang" value="0"> No Brasil! <br>
+  				  <input id="question-1-answer-b" type="radio" name="favelang" value="1"> No exterior!<br>
+  				  <div id="submit1" class="button">Enviar Resposta</div>
+            <div class="clearfix"></div>
+  			  </div>
+
+  			 <div id="question-2">
+  				 <h2>Questão 2</h2>
+  				 <h3>Qual área do desenvolvimento pretende trabalhar?</h3>
+  	  		 <input id="question-2-answer-a" type="radio" name="favelang" value="1"> Desenvolvimento web: programar app para internet<br>
+  				 <input id="question-2-answer-b" type="radio" name="favelang" value="2"> Desenvolvimento mobile: programar app para celular/tablets<br>
+  				 <input id="question-2-answer-c" type="radio" name="favelang" value="3"> Cientista de dados: resolver e a curiosidade para explorar quais problemas precisam ser resolvidos<br>
+           <input id="question-2-answer-c" type="radio" name="favelang" value="5"> Hacking ético: função de encontrar vulnerabilidades de segurança que um hacker malicioso poderia potencialmente explorar<br>
+  				 <div id="submit2" class="button">Enviar Resposta</div>
+           <div class="clearfix"></div>
+  			 </div>
+  			
+  			 <div id="question-3">	
+  				 <h2>Questão 3</h2>
+  				 <h3>Qual parte do desenvolvimento quer fazer?</h3>
+  	  		 <input id="question-3-answer-a" type="radio" name="favelang" value="21"> Programador front-end: desenvolve interface do software, onde o usuário interage<br>
+  				 <input id="question-3-answer-b" type="radio" name="favelang" value="34"> Programador Back-end: tudo como operações do lado do servidor e funções de banco de dados tratou do back-end<br>
+  				 <input id="question-3-answer-c" type="radio" name="favelang" value="55"> Programador full-stack: Une os dois conceitos acima<br>
+  				 <div id="submit3" class="button">Enviar Resposta</div>
+           <div class="clearfix"></div>
+  			 </div>
+
+         <div id="question-4">
+            <h2>Questão 4</h2>
+            <h3>Qual sistema operacional?</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="8"> IOS  <br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="13"> Android<br>
+            <div id="submit4" class="button">Enviar Resposta</div>
+            <div class="clearfix"></div>
+          </div>
+
+
+
+         <div id="question-5"> 
+           <h2>Obrigado por responder a pesquisa!</h2>
+           <h3>Seu score de segurança é: </h3>
+           <h1 id=printtotalscore></h1>
+           <p id=printscoreinfo></p>
+
+         </div>
+
+
+  				
+  	  	</form>
+
+  	  </div>
+  	</div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
