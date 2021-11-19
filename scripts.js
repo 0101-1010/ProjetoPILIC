@@ -31,7 +31,7 @@ function storeAnswer(question_number, event){
 }
 
 
-function totalScore(event){
+function totalScore(){
     var total = answers.question1+answers.question2+answers.question3+answers.question4;
     console.log(answers.question1+answers.question2+answers.question3+answers.question4);
     return total;
@@ -39,21 +39,21 @@ function totalScore(event){
 
 function getInfoBasedOnScore(){
     if(totalScore() === 22){
-        var score_info = "HTML / CSS / Java Script";
+        var score_info = "As linguagens recomendada são: HTML, CSS e Java Script."+"\nMédia salarial: R$ 2.162,00"+"\n HTML:"+"\t"+'https://www.udemy.com/course/aprendahtml/'.link('https://www.udemy.com/course/aprendahtml/')+"\n CSS:"+"\t"+'https://www.w3schools.com/css/default.asp'.link('https://www.w3schools.com/css/default.asp')+"\n JavaScript:"+'\t'+'https://www.udemy.com/course/curso-web/'.link('https://www.udemy.com/course/curso-web/');
     } else if(totalScore() === 35){
-        var score_info = "Java Script / Python";
+        var score_info = "As linguagens recomendada são: Java Script e Python"+"\nMédia salarial: R$ R$ 5.061 "+"\n JavaScript:"+'\t'+'https://www.udemy.com/course/curso-web/'.link('https://www.udemy.com/course/curso-web/')+"\n Python:"+"\t"+'https://www.udemy.com/course/curso-python-3-completo/'.link('https://www.udemy.com/course/curso-python-3-completo/');
     }else if(totalScore() === 56){
-        var score_info = "HTML / CSS / Java Script / Python / mysql "
+        var score_info = "As linguagens recomendada são: HTML, CSS, Java Script, Python e MySQL."+"\nMédia salarial: R$ 5.124"+"\n HTML:"+"\t"+'https://www.udemy.com/course/aprendahtml/'.link('https://www.udemy.com/course/aprendahtml/')+"\n CSS:"+"\t"+'https://www.w3schools.com/css/default.asp'.link('https://www.w3schools.com/css/default.asp')+"\n JavaScript:"+'\t'+'https://www.udemy.com/course/curso-web/'.link('https://www.udemy.com/course/curso-web/')+"\n Python:"+"\t"+'https://www.udemy.com/course/curso-python-3-completo/'.link('https://www.udemy.com/course/curso-python-3-completo/')+"\n MySQL:"+"\t"+'https://www.udemy.com/course/bancos-de-dados-relacionais-basico-avancado/'.link('https://www.udemy.com/course/bancos-de-dados-relacionais-basico-avancado/');
     } else if(totalScore() === 10){
         var score_info = "É recomendado entender um pouco do ambiente de servidores, manjar o fundamental de HTML, CSS e JavaScript. React. Swift "
     } else if(totalScore() === 15){
-        var score_info = "É recomendado entender um pouco do ambiente de servidores, manjar o fundamental de HTML, CSS e JavaScript. React. Kotlin.\n Média salarial: R$ 4.670,00 \n Link para estudos abaixo:\n HTML:"+'\t'+'https://www.udemy.com/course/aprendahtml/'.link('https://www.udemy.com/course/aprendahtml/')+"\n CSS: https://www.w3schools.com/css/default.asp\n JavaScript: https://www.udemy.com/course/curso-web/\n React: https://www.udemy.com/course/curso-react-native/ \n Kotlin: https://www.udemy.com/course/curso-desenvolvedor-kotlin/"
+        var score_info = "É recomendado entender um pouco do ambiente de servidores, manjar o fundamental de HTML, CSS e JavaScript. React. Kotlin.\n Média salarial: R$ 4.670,00 \n Link para estudos abaixo:\n HTML:"+'\t'+'https://www.udemy.com/course/aprendahtml/'.link('https://www.udemy.com/course/aprendahtml/')+"\n CSS:"+'\t'+'https://www.w3schools.com/css/default.asp'.link('https://www.w3schools.com/css/default.asp')+"\n JavaScript:"+'\t'+'https://www.udemy.com/course/curso-web/'.link('https://www.udemy.com/course/curso-web/')+"\n React:"+'\t'+'https://www.udemy.com/course/curso-react-native/'.link('https://www.udemy.com/course/curso-react-native/')+"\n Kotlin:"+'\t'+'https://www.udemy.com/course/curso-desenvolvedor-kotlin/'.link('https://www.udemy.com/course/curso-desenvolvedor-kotlin/')
     } else if(totalScore() === 3){
         var score_info = "java / python / C /SQL "
     } else if(totalScore() === 5){
         var score_info = "profissional tem que ser muito bom em redes, sistemas operacionais e arquitetura de computadores. Se possível, ter conhecimento de desenvolvimento de software, principalmente Phyton, C, SQL "
-    } else if(totalScore() === 24){
-        var score_info = "HTML / CSS / Java Script/ AngularJS "
+    } else if(totalScore() === 23){
+        var score_info = "HTML , CSS , Java Script, AngularJS "
     } else if(totalScore() === 36){
         var score_info = "Ruby, Python, C#, C++ "
     } else if(totalScore() === 57){
@@ -75,7 +75,6 @@ var submit2 = document.getElementById('submit2');
 var submit3 = document.getElementById('submit3');
 var submit4 = document.getElementById('submit4');
 var submit5 = document.getElementById('submit5');
-var submit6 = document.getElementById('submit5');
 
 
 function nextQuestion(question_number){
@@ -130,6 +129,7 @@ submit5.addEventListener('click', function(){
     var a = document.getElementById('printscoreinfo').value.replace(/\n/g, '<br>')
     document.getElementById("printscoreinfo").innerHTML = a;
 })
+
 
 function growProgressBar(percentage_width){
     var bar = document.getElementById("progress_bar");
